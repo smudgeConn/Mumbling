@@ -1,0 +1,8 @@
+function accum(s) {
+  let lowercase = Array.from(s.toLowerCase())
+  let array = [];
+  lowercase.forEach((letter, index) => {
+    {array.push(letter.toUpperCase()+letter.repeat(index))}
+  })
+  return array.join("-");
+}
